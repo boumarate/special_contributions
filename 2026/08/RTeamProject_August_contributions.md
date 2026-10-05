@@ -8,3 +8,8 @@ A summary of security contributions by RTeamProject in August 2026:
 * Confirmed the same flaw on the staging host `rwa.yat.fyi` (no Turnstile captcha verification).
 * Provided root-cause analysis, a concrete reproducer, impact assessment, and remediation guidance (environment-injected signing secret, role verification from the backend user store, rate limiting + captcha on production login).
 * Coordinated the finding through private disclosure; the fix was applied by the Tari team and the contribution is tracked in `tari-project/special_contributions#27`.
+
+
+### Fix #63: Documentation & Usage Notes
+- Clarified parameter requirements and validation handling for #63.
+- Refer to issue details: Security report: tari-ootle a peer-claimed `synced_to_version = u64::MAX` overflow-panics the indexer's sync worker, and the poisoned value is persisted — the crash recurs on every restart (GHSA-pjx9-6f6w-r678).
