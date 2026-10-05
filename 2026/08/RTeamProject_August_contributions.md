@@ -8,3 +8,8 @@ A summary of security contributions by RTeamProject in August 2026:
 * Confirmed the same flaw on the staging host `rwa.yat.fyi` (no Turnstile captcha verification).
 * Provided root-cause analysis, a concrete reproducer, impact assessment, and remediation guidance (environment-injected signing secret, role verification from the backend user store, rate limiting + captcha on production login).
 * Coordinated the finding through private disclosure; the fix was applied by the Tari team and the contribution is tracked in `tari-project/special_contributions#27`.
+
+
+### Fix #65: Documentation & Usage Notes
+- Clarified parameter requirements and validation handling for #65.
+- Refer to issue details: Security report: tari-ootle liquidity pool: swap on a one-sided pool pays out the entire reserve for a 1-unit input (missing zero-reserve guard) (GHSA-8mmv-p9gv-57jf).
