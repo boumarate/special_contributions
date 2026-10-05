@@ -8,3 +8,8 @@ A summary of security contributions by RTeamProject in August 2026:
 * Confirmed the same flaw on the staging host `rwa.yat.fyi` (no Turnstile captcha verification).
 * Provided root-cause analysis, a concrete reproducer, impact assessment, and remediation guidance (environment-injected signing secret, role verification from the backend user store, rate limiting + captcha on production login).
 * Coordinated the finding through private disclosure; the fix was applied by the Tari team and the contribution is tracked in `tari-project/special_contributions#27`.
+
+
+### Fix #64: Documentation & Usage Notes
+- Clarified parameter requirements and validation handling for #64.
+- Refer to issue details: Security report: tari-ootle public liquidity pools allow arbitrary LP token minting and reserve theft (GHSA-q7qg-fgqp-p96v).
