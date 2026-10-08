@@ -7,3 +7,9 @@ A summary of security contributions by chironbuilds in September 2026:
 * Provided root-cause analysis, a reachability walkthrough, a minimal proof of concept, and a suggested fix.
 * Testing was performed locally only; no shared network was touched.
 * Coordinated the finding through private disclosure; the fix was applied by the Tari team. Technical details remain in the advisory until it is published. The contribution is tracked in `tari-project/special_contributions#36`.
+
+* Reported a security vulnerability in `tari-ootle` where the wallet derives its fee-swap input from unverified indexer pool reserves with no cap or confirmation, submitted through GitHub Security Advisories and tracked in `GHSA-mv6w-58hv-xv8r`.
+* The report showed that a lying indexer can make a fee swap sell the user's entire token balance into an attacker-owned pool (same class as `GHSA-vv8c-c3cc-cwm8`).
+* Provided root-cause analysis, a reachability walkthrough, a minimal proof of concept, and a suggested fix.
+* Testing was performed locally only; no shared network was touched.
+* Coordinated the finding through private disclosure; the fix was applied by the Tari team. Technical details remain in the advisory until it is published. The contribution is tracked in `tari-project/special_contributions#106`.
